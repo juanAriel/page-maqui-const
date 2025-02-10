@@ -84,4 +84,18 @@ button:focus-visible {
     width: 125px;
     height: 60px;
   }
+  .first-title {
+    font-weight: 900;
+    font-size: xxx-large;
+    color: #ffa500;
+    background: transparent;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  .second-title {
+    font-weight: 900;
+    font-size: xxx-large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
 }
