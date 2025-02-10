@@ -23,10 +23,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424; /* Agregado para mantener el fondo */
+  display: block; /* Cambiado de flex a block */
 }
 
 h1 {
@@ -61,7 +61,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #000;
   }
 
   a:hover {
@@ -70,5 +70,18 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+
+  .main-container {
+    background-image: linear-gradient(to bottom, #ffa500, #ffd93b);
+  }
+  .btn-contact {
+    background-color: #ffd93b;
+    border-radius: 15px;
+    border-color: #000;
+  }
+  .image-logo {
+    width: 125px;
+    height: 60px;
   }
 }
