@@ -86,7 +86,7 @@ button:focus-visible {
   }
   .first-title {
     font-weight: 900;
-    font-size: xxx-large;
+    font-size: 75px;
     color: #ffa500;
     background: transparent;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -94,7 +94,7 @@ button:focus-visible {
   }
   .second-title {
     font-weight: 900;
-    font-size: xxx-large;
+    font-size: 75px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
   }

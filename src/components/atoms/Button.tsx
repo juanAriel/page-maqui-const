@@ -10,8 +10,8 @@ const Button: React.FC<ButtonProps> = ({ styles, label, onClick }) => {
   const classNames = `${label}`;
 
   return (
-    <button className={classNames + styles} onClick={onClick}>
-      contactame
+    <button className={styles} onClick={onClick}>
+      {classNames}
     </button>
   );
 };
