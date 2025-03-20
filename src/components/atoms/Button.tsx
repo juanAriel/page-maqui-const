@@ -1,16 +1,22 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 type ButtonProps = {
   label: string;
-  styles?: string;
+  className?: string;
   onClick?: () => void;
+  styles?: CSSProperties;
 };
 
-const Button: React.FC<ButtonProps> = ({ styles, label, onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  className,
+  label,
+  onClick,
+  styles,
+}) => {
   const classNames = `${label}`;
 
   return (
-    <button className={styles} onClick={onClick}>
+    <button className={className} onClick={onClick} style={styles}>
       {classNames}
     </button>
   );

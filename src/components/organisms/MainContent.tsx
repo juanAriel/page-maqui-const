@@ -20,7 +20,7 @@ const MainContent = () => {
             </h4>
             <Button
               label="Contactame"
-              styles="rounded-5 text-white bg-black fw-bold m-2 "
+              className="rounded-5 text-white bg-black fw-bold m-2 "
             />
           </div>
         </div>
