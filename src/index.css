@@ -82,7 +82,8 @@ button:focus-visible {
   }
   .image-logo {
     width: 125px;
-    height: 60px;
+    background: #ffd93b;
+    border: 2px solid #000;
   }
   .first-title {
     font-weight: 900;

@@ -1,11 +1,13 @@
 const Logo = () => {
   return (
     <div className="container-logo">
-      <img
-        className="image-logo"
-        src="../../../public/images/logo.png"
-        alt="Logo"
-      />
+      <a href="#">
+        <img
+          className="image-logo h-75 "
+          src="../../../public/images/logo-v2.png"
+          alt="Logo"
+        />
+      </a>
     </div>
   );
 };
