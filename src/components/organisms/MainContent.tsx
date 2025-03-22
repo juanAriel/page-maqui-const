@@ -34,7 +34,7 @@ const MainContent = () => {
       </div>
 
       <div>
-        <h1 className="title-section-tools mt-5 mb-5">Nuestro Productos</h1>
+        <h1 className="title-section-tools  mb-2">Nuestro Productos</h1>
         <Carousel images={imagePaths} />
       </div>
     </div>

@@ -4,57 +4,39 @@ interface ImageData {
     alt: string;
     name: string;
     description: string;
+    price:number;
   }
   
   const imagePaths: ImageData[] = [
       { 
-          src: "/images/images-tools/topadora.png", 
+          src: "../../public/images/images-tools/andamio.png", 
           alt: "Imagen 1", 
-          name: "topadora", 
-          description: "Topadora de 100 de fuerza" 
+          name: "Andamio", 
+          description:"Andamio ligero galvanizado banquetero de cinco peldaños, es ideal para obras ligeras, trabajos en interior y espacios reducidos, con sus cinco peldaños permite subir con seguridad y comodidad por la escalerilla.",
+          price: 150,
       },
       { 
-          src: "/images/images-tools/topadora.png", 
+          src: "../../public/images/images-tools/ROTOMARTILLO.png", 
           alt: "Imagen 2", 
           name: "topadora", 
-          description: "Topadora de 100 de fuerza" 
+          description:"El rotomartillo GBH432DFR de Bosch es el más rápido de la clase, pues es un 30% superior a los competidores en las perforaciones.",
+            price: 85,
       },
       { 
-          src: "/images/images-tools/topadora.png", 
-          alt: "Imagen 3", 
-          name: "topadora", 
-          description: "Topadora de 100 de fuerza" 
-      },
-      { 
-        src: "/images/logo.png", 
-        alt: "Imagen 4", 
-        name: "topadora", 
-        description: "Topadora de 100 de fuerza" 
+        src: "../../public/images/images-tools/andamio.png", 
+        alt: "Imagen 1", 
+        name: "Andamio", 
+        description:"Andamio ligero galvanizado banquetero de cinco peldaños, es ideal para obras ligeras, trabajos en interior y espacios reducidos, con sus cinco peldaños permite subir con seguridad y comodidad por la escalerilla.",
+        price: 150,
     },
     { 
-        src: "/images/logo.png", 
-        alt: "Imagen 5", 
+        src: "../../public/images/images-tools/ROTOMARTILLO.png", 
+        alt: "Imagen 2", 
         name: "topadora", 
-        description: "Topadora de 100 de fuerza" 
+        description:"El rotomartillo GBH432DFR de Bosch es el más rápido de la clase, pues es un 30% superior a los competidores en las perforaciones.",
+          price: 85,
     },
-    { 
-        src: "/images/logo.png", 
-        alt: "Imagen 6", 
-        name: "topadora", 
-        description: "Topadora de 100 de fuerza" 
-    },
-    { 
-        src: "/images/logo.png", 
-        alt: "Imagen 7", 
-        name: "topadora", 
-        description: "Topadora de 100 de fuerza" 
-    },
-    { 
-        src: "/images/logo.png", 
-        alt: "Imagen 8", 
-        name: "topadora", 
-        description: "Topadora de 100 de fuerza" 
-    },
+      
   ];
   
   export default imagePaths;

@@ -1,11 +1,14 @@
 // src/components/organisms/Carousel.tsx
-import React from 'react';
-import CarouselGroup from '../molecules/CarouselGroup';
+import React from "react";
+import CarouselGroup from "../molecules/CarouselGroup";
 
 // Actualiza la interfaz para reflejar que `images` es un array de objetos con `src` y `alt`
 interface ImageData {
   src: string;
   alt: string;
+  name: string;
+  description: string;
+  price: number;
 }
 
 interface CarouselProps {
@@ -13,18 +16,22 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
-    const groupedImages: ImageData[][] = [];
-    for (let i = 0; i < images.length; i += 3) {
-        groupedImages.push(images.slice(i, i + 3));
-    }
-    
+  const groupedImages: ImageData[][] = [];
+  for (let i = 0; i < images.length; i += 3) {
+    groupedImages.push(images.slice(i, i + 3));
+  }
+
   return (
-    <div id="carouselExample" className="carousel slide mb-5" data-bs-ride="carousel">
+    <div
+      id="carouselExample"
+      className="carousel slide p-5"
+      data-bs-ride="carousel"
+    >
       <div className="carousel-inner">
         {groupedImages.map((group, index) => (
-          <CarouselGroup 
-            key={index} 
-            images={group} 
+          <CarouselGroup
+            key={index}
+            images={group}
             className={index === 0 ? "carousel-item active  " : "carousel-item"} // Agregar clase active solo al primer grupo
           />
         ))}

@@ -4,6 +4,9 @@ import CarouselImage from "../atoms/CarouselImage";
 interface ImageData {
   src: string;
   alt: string;
+  name: string;
+  description: string;
+  price: number;
 }
 interface CarouselGroupProps {
   images: ImageData[];
@@ -11,12 +14,18 @@ interface CarouselGroupProps {
 }
 
 const CarouselGroup: React.FC<CarouselGroupProps> = ({ images, className }) => {
-  console.log(images[0].src);
   return (
     <div className={className}>
       <div className="row">
         {images.map((image, index) => (
-          <CarouselImage key={index} src={image.src} alt={image.alt} />
+          <CarouselImage
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            name={image.name}
+            description={image.description}
+            price={image.price}
+          />
         ))}
       </div>
     </div>

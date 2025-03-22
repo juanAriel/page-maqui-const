@@ -105,7 +105,7 @@ button:focus-visible {
     text-shadow: -1px -1px 0 #f9f9f9, 1px -1px 0 #f9f9f9, -1px 1px 0 #f9f9f9,
       1px 1px 0 #f9f9f9;
   }
-  .content-card-image {
+  /* .content-card-image {
     position: relative;
     height: 450px;
     overflow: hidden;
@@ -116,5 +116,59 @@ button:focus-visible {
   .content-card-image img {
     height: 250px;
     object-fit: cover;
+  } */
+
+  /* Estilos para el efecto de volteo (flip) */
+  .card-flip-main {
+    justify-items: center;
+  }
+  .card-flip {
+    perspective: 1000px;
+    height: 380px;
+    width: 95%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    justify-items: center;
+  }
+
+  .card-flip-inner {
+    position: relative;
+    width: 95%;
+    height: 380px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border: 3px solid white;
+    border-radius: 10%;
+  }
+
+  .card-flip:hover .card-flip-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-flip-front,
+  .card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10%;
+  }
+
+  .card-flip-front img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .card-flip-back {
+    transform: rotateY(180deg);
   }
 }
