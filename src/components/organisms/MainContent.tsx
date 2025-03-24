@@ -2,6 +2,13 @@ import Carousel from "./Carousel";
 import imagePaths from "../../assets/imagePaths";
 import Button from "../atoms/Button";
 
+const scrollToContactForm = () => {
+  const element = document.getElementById('contactForm');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const MainContent = () => {
   return (
     <div className="justify-content-center">
@@ -21,6 +28,7 @@ const MainContent = () => {
             <Button
               label="Contactame"
               className="rounded-5 text-white bg-black fw-bold m-2 "
+              onClick={scrollToContactForm}
             />
           </div>
         </div>

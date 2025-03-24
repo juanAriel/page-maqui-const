@@ -30,7 +30,7 @@ const Footer = () => {
             <h4 className="text-white mb-0 fw-bold">700000001</h4>
           </div>
         </div>
-        <div className="contact col-md-4">
+        <div className="contact col-md-4" id="contactForm">
           <h5 className="text-white fw-bold">Contactanos</h5>
           <FormContact />
         </div>
