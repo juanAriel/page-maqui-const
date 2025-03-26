@@ -15,7 +15,6 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
   description,
   price,
 }) => {
-  console.log(src, alt, name);
   return (
     <div className="card-flip-main col-md-4">
       <div className="card-flip ">

@@ -5,6 +5,8 @@ type ButtonProps = {
   className?: string;
   onClick?: () => void;
   styles?: CSSProperties;
+  isLoading?: boolean;
+  disabled?: boolean;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,11 +14,19 @@ const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
   styles,
+  isLoading,
+  disabled = false,
 }) => {
   const classNames = `${label}`;
 
   return (
-    <button className={className} onClick={onClick} style={styles}>
+    <button
+      type="submit"
+      className={className}
+      onClick={onClick}
+      style={styles}
+      disabled={isLoading || disabled}
+    >
       {classNames}
     </button>
   );
