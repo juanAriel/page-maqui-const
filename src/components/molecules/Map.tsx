@@ -14,9 +14,7 @@ const Map: React.FC = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       <Marker position={[-17.392694, -66.269257]}>
-        <Popup>
-          More info here.
-        </Popup>
+        <Popup>More info here.</Popup>
       </Marker>
     </MapContainer>
   );

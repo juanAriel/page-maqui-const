@@ -19,7 +19,6 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
     <div className="card-flip-main col-md-4">
       <div className="card-flip ">
         <div className="card-flip-inner">
-          {/* Frente de la tarjeta - muestra imagen y nombre */}
           <div className="card-flip-front bg-black d-flex justify-content-center">
             <div className="align-content-center">
               <h1 className="text-white">{name}</h1>
@@ -27,11 +26,9 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
             </div>
           </div>
 
-          {/* Reverso de la tarjeta - muestra precio y descripción */}
           <div className="card-flip-back bg-black text-white">
             <div className="card-body  align-content-center">
               <h5 className="card-title fw-bold">{name}</h5>
-              {/* <h2>{name}</h2> */}
               <p className="mt-3  card-text">{description}</p>
               <a href="#" className="card-link btn bg-warning m-2">
                 Alquiler: {price.toLocaleString()} Bs

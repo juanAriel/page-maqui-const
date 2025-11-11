@@ -25,8 +25,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #242424; /* Agregado para mantener el fondo */
-  display: block; /* Cambiado de flex a block */
+  background-color: #242424;
+  display: block;
 }
 
 h1 {
@@ -73,7 +73,7 @@ button:focus-visible {
   }
 
   .main-container {
-    background-image: linear-gradient(to bottom, #ffa500, #ffd93b);
+    background: #ffd93b;
   }
   .btn-contact {
     background-color: #ffd93b;
@@ -106,20 +106,7 @@ button:focus-visible {
     text-shadow: -1px -1px 0 #f9f9f9, 1px -1px 0 #f9f9f9, -1px 1px 0 #f9f9f9,
       1px 1px 0 #f9f9f9;
   }
-  /* .content-card-image {
-    position: relative;
-    height: 450px;
-    overflow: hidden;
-    border: 3px solid white;
-    border-radius: 10%;
-    
-  }
-  .content-card-image img {
-    height: 250px;
-    object-fit: cover;
-  } */
 
-  /* Estilos para el efecto de volteo (flip) */
   .card-flip-main {
     justify-items: center;
   }
@@ -171,5 +158,25 @@ button:focus-visible {
 
   .card-flip-back {
     transform: rotateY(180deg);
+  }
+  .image-logo {
+    width: 80px;
+    background: #ffc107;
+    border: 2px solid #000;
+    margin-bottom: 4px;
+  }
+  .header-container {
+    background-color: #000000;
+  }
+  @media (min-width: 768px) {
+    .second-title {
+      flex: 0 0 auto;
+      width: 46% !important;
+    }
+  }
+  .servicio i {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 15px;
   }
 }

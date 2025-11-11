@@ -11,7 +11,6 @@ const FormContact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validaciones previas
     if (!email.trim() || !message.trim()) {
       Swal.fire({
         icon: "warning",
@@ -80,7 +79,8 @@ const FormContact = () => {
         }`}
         styles={{
           background: "#FFA500",
-          height: 30,
+          height: 40,
+          width: 100,
           padding: "revert",
         }}
         disabled={isLoading}

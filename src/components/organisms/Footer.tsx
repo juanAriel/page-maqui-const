@@ -30,11 +30,11 @@ const Footer = () => {
             <h4 className="text-white mb-0 fw-bold">700000001</h4>
           </div>
         </div>
-        <div className="contact col-md-4" id="contactForm">
+        <div className="contact col-md-4 mt-5 mt-md-0" id="contactForm">
           <h5 className="text-white fw-bold">Contactanos</h5>
           <FormContact />
         </div>
-        <div className="Location flex flex-col items-center col-md-4">
+        <div className="Location flex flex-col items-center col-md-4 mt-5 mt-md-0">
           <h5 className="text-white fw-bold">Nos ubicamos en</h5>
           <Map />
         </div>
